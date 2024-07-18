@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body{
+    font-family:'Roboto', 'Segoe UI' ;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    font-size: 16px;
+}
+
+/* Sidebar */
+.sidebar{
+    grid-row: 1/3;
+    background: #1992d4;
+    color: white;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 4fr;
+}
+.logo{
+    grid-row: 1/2;
+    font-size: 32px;
+    display: flex;
+    align-content: center;
+}
+.logo i{
+    font-size: 3rem;
+    height: 3rem;
+    color: white;
+    padding-right: 15px;
+}
+.menu_group1{
+    grid-row: 2/3;
+    font-size: 20px;
+}
+.menu_group1 ul{
+    padding: 1rem 0rem 2rem 0rem;
+}
+.menu_group1 ul li{
+    list-style: none;
+    padding-bottom: 1rem;
+    display: flex;
+    align-content: center;
+}
+.menu_group1 ul li i{
+    height: 1.5rem;
+    color: white;
+    padding-right: 20px;
+
+}
+.menu_group2{
+    grid-row: 3/4;
+    font-size: 20px;
+}
+.menu_group2 ul li{
+    list-style: none;
+    padding-bottom: 1rem;
+    display: flex;
+    align-content: center;
+}
+.menu_group2 ul li i{
+    height: 1.5rem;
+    color: white;
+    padding-right: 20px;
+}
+/* Header */
+.header{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 5px;
+}
+.searchColumn{
+    grid-row: 1/2;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+.searchColumn input{
+    height: 30px;
+    width: 36rem;
+    border-radius: 16px;
+    border: .2rem solid white;
+    background: #e2e8f0;
+    padding: .2rem 1rem;
+}
+.searchColumn div{
+    color: black;
+    font-size: 20px;
+
+}
+.profileColumn{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: 2rem 1fr;
+}
+.profileColumn .pic{
+    grid-row: 1/3;
+    width: 5rem;
+    height: 5rem;
+    background: wheat;
+    border-radius: 50%;
+    align-items: center;
+    justify-self: self-end;
+    margin: 0px 15px;
+}
+.profileColumn .pic img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.profileColumn .greet{
+    grid-column: 2/3;
+    align-self: self-end;
+    font-size: 14px;
+    font-weight: bold;
+}
+.profileColumn .profile_name{
+    grid-column: 2/3;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: start;
+}
+.profile_short{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    gap: 15px;
+}
+.profile_short i{
+    padding-right: 30px;
+}
+.profile_short div{
+    width: 4rem;
+    height: 4rem;
+    background: wheat;
+    border-radius: 50%;
+}
+.profile_short div img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.profile_short p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.header_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 4rem;
+    gap: 1rem;
+    font-size: 16px;
+}
+.header_buttons button{
+    background: #1992d4;
+    color: white;
+    height: 3rem;
+    width: 8rem;
+    border: .2rem solid white;
+    border-radius: 2rem;
+}
+
+/* Maindiv */
+.maindiv{
+    grid-column: 2/3;    
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background: #e2e8f0;
+}
+.projectsSection{
+    grid-row: 1/3;
+    padding: 20px 0px 20px 20px;
+    margin: 0;
+    box-sizing: content-box;
+    display: grid;
+    grid-template-rows: 40px 1fr;    
+}
+.projectsSection h2{
+    grid-row: 1/2;
+    padding: 5px 0px;
+}
+.projects{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+.cards{
+    padding: 40px 20px 20px 20px;
+    height: 200px;
+    border-radius: .5rem;
+    border-left: .5rem solid #f0b429;
+    background: white;
+    display: grid;
+    grid-template-rows: 2rem 1fr 2rem;
+}
+.cards .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.cards .icons img{
+    height: 1.5rem;
+}
+.announcement_Div{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    padding: 20px;
+    margin: 0;
+}
+.announcement_Div h2{
+    grid-row: 1/2;
+    padding: 5px 0px;
+}
+.announcements{
+    grid-row: 2/3;
+    background: white;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr); 
+    padding: 20px;
+    justify-self: center;
+    align-self: self-start;
+}
+.announcements div{
+    padding: 20px;
+}
+.announcements h3{
+    font-size: 16px;
+}
+.announcements p{
+    font-size: 12px ;
+}
+.trending{
+    grid-column: 2/3;  
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    padding: 20px;
+    margin: 0;
+}
+.trending h2{
+    grid-row: 1/2;
+    padding: 5px 0px;
+}
+.trends{
+    grid-row: 2/3;
+    background: white;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    padding: 20px;
+    justify-self:stretch;
+    align-self:stretch;   
+}
+.trend{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 5px;
+}
+.trend .pic{
+    grid-row: 1/3;
+    width: 4rem;
+    height: 4rem;
+    background: wheat;
+    border-radius: 50%;
+    align-items: center;
+    justify-self: center;
+}
+.trend .pic img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    align-self: center;
+}
+.trend .handle{
+    grid-column: 2/3;
+    align-items: self-start;
+}
+.trend .describe{
+    grid-column: 2/3;
+    align-items:self-start;
+}
